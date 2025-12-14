@@ -59,8 +59,8 @@ def main():
 
     default_style = "OutlineColour=&H40000000,BorderStyle=3"
     if style_file and os.path.exists(style_file):
-    with open(style_file, "r", encoding="utf-8") as f:
-        subtitle_style = json.load(f).get("force_style", default_style)
+        with open(style_file, "r", encoding="utf-8") as f:
+            subtitle_style = json.load(f).get("force_style", default_style)
     else:
         subtitle_style = default_style
 
